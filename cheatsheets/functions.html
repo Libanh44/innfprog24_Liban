@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Marius Akerbæk. E-POST: <span ID="emailcontainer"></span></p>
+    
+
+<script>
+    //Deklarere en function
+    function myFirstFunction() [
+        console.log("jeg kjører min første funksjon :")
+    ]
+    //kjøre (kalle) funksjonen:
+    myFirstFunction()
+
+    //Deklarere en funksjon med en parameter
+    function printName(name) {
+        console.log("jeg heter + name")
+    }
+    printName("Marius")
+
+ //Deklarere en function med en parameter
+ function myFirstFunction() [
+        console.log("jeg kjører min første funksjon :")
+    ]
+    //kjøre (kalle) funksjonen:
+    myFirstFunction()
+
+    //Deklarere en funksjon med en parameter som har en standard verdi
+    function printName(name = "ingenting enda ..")  {
+        console.log ("jeg heter + name")
+    }
+    printDefaultName()
+    // lage en funksjon med e-post som link (template)
+    function createEmaillink(email) {
+        return <a href="mailto:${email}">${emai}</a>
+
+    }
+    console.log (createEmaillink)("libanah@hiof.no")
+    document.getElementByid("emailcontainer").innerHTML =createEmaillink("libanah@hiof.no")
+</script>
+
+
+</body>
+</html>
+
