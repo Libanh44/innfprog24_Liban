@@ -7,10 +7,21 @@
 </head>
 <body>
     <h1>Regn ut din alder</h1>
+    <p>
+    <label for="birthyear">ditt fødselår:</label>
+    <input id="birthyear type = number" />
+    </p>
+    <p>
+        <label for="year">år utregning:</label>
+        <input id="year" type ="number" />
+        <p><button onlick="agecalculator()">regn ut</button></p>
+        </p>
     <p id="agesentence"></p>
 
+   
     <script>
-        function ageCalculator(birthyear = "1983", year = "2024") {
+        function ageCalculator() {
+
             //Regne ut alder
             const age = year - birthyear
             console.log(age)
@@ -23,7 +34,6 @@
                 } else {
                     text = `I ${year} var du ${age} år gammel.`
                 }   
-                
             } else {
                 text = `I år er du ${age} år gammel.`
             }
